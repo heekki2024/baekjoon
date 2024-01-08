@@ -99,5 +99,8 @@
     <ClCompile Include="10871번.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="10818번.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
