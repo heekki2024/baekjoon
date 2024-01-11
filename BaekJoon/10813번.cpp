@@ -3,6 +3,8 @@
 
 int main(void)
 {
+
+	//desktop에서 작성
 	int n;
 	
 	std::cin >> n;
@@ -11,4 +13,5 @@ int main(void)
 
 	return 0;
 
+	
 }
