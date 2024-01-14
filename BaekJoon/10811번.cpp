@@ -12,9 +12,16 @@ int main(void)
 	std::vector<int> v(n);
 
 
-	for (int i = 0; i < m; i++)
+	//v[0] = 1;
+	//v[1] = 2;
+	//v[2] = 3;
+	//v[3] = 4;
+	//v[4] = 5;
+
+
+	for (int i = 0; i < n; i++)
 	{
-		v[0] = i + 1;
+		v[i] = i + 1;
 	}
 
 
@@ -22,21 +29,31 @@ int main(void)
 	{
 		int a;
 		int b;
-		std::cin >> a;
+		std::cin >> a; //1~4;
+		 
+		a = a - 2;
 		std::cin >> b;
+		b = b - 1;
+		int tempa = a;
+
 		std::vector<int> temp(n);
 
-		for (a - 1; a - 1 < b; a++)
+		for (int i = 0; i < n; i++)
 		{
-
-			v[a - 1] = temp[a - 1];
+			temp[i] = v[i];
 		}
-
-		for (b - 1; b - 1 >= a - 1; b--)
+		//v[3], v[2], v[1] v[0] 
+		for (b; b > a; b--)
 		{
-			v[b - 1] = temp[a - 1];
+			v[b] = temp[tempa + 1];
+			tempa++;
 		}
 
 	}
-
+	
+	for (int i = 0; i < n; i++)
+	{
+		std::cout << v[i] << std::endl;
+	}
+	return 0;
 }
